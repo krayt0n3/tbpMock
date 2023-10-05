@@ -1,0 +1,39 @@
+
+@import '~bootstrap/scss/bootstrap';
+
+//Importing ITC font
+@import url("https://use.typekit.net/mca5vqk.css");
+$headings : "itc-avant-garde-gothic-pro", sans-serif;
+$para: "open-sans", sans-serif;
+
+// Branding Colors
+$dark-orange: #d94e41;
+$light-orange: #eb8956;
+$light-gray: #cbd1d0;
+$dark-blend: #793b42;
+$light-blend: #8a6d62;
+$warm-gray: #ada299;
+$dark-blue: #1a2844;
+$light-blue: #29516d;
+$black: #333333;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+  font-family: $para;
+  font-weight: 400;
+font-style: normal;
+}
+
+.logo :hover {
+  cursor: pointer;
+}
+
+.nav-link :hover {
+background-color: $dark-blue;
+color: $light-gray;
+}
