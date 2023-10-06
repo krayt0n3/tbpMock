@@ -1,13 +1,13 @@
 import '../styles/App.scss';
 import { Col, Container, Row } from 'react-bootstrap';
 
-export default function LPM() {
+export default function TBP() {
   return (
     <div>
       <Container>
         <Row><Col>
-      <h1>LPM</h1>
-      <p>What do I do?</p>
+      <h1>Bookshop</h1>
+      <p>Fill in later</p>
       </Col></Row></Container>
     </div>
   )

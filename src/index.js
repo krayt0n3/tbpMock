@@ -9,6 +9,8 @@ import App from './App';
 import ErrorPage from './pages/error';
 import LPM from './pages/lpm';
 import reportWebVitals from './reportWebVitals';
+import TBP from './pages/tbpMock';
+import Home from './pages/home';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: '/lpm',
         element: <LPM />
+      },
+      {
+        path: '/tbpMock',
+        element: <TBP />
+      },
+      {
+        path: '/home',
+        element: <Home />
       }
     ]
   }
