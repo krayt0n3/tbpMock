@@ -33,7 +33,24 @@ font-style: normal;
   cursor: pointer;
 }
 
-.nav-link :hover {
-background-color: $dark-blue;
-color: $light-gray;
+.tbnav {
+  background-color: white !important;
+
+  .nav-link {
+    font-weight: 700;
+  }
+}
+
+.tbfooter {
+  background-color: $black !important;
+  color: whitesmoke;
+  padding: 2% 0;
+
+  .nav-link, .navbar-text {
+    color: white;
+  }
+}
+
+.small {
+  font-size: small;
 }

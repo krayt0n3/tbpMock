@@ -4,10 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Row, Col} from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import {ReactComponent as Logo} from '../assets/Logo-Final.svg';
+import {ReactComponent as LogoWhite} from '../assets/Logo-Final-Monotone.svg';
 import '../styles/App.scss';
 
 export default function TBPLayout({children}) {
@@ -26,7 +28,7 @@ export default function TBPLayout({children}) {
   };
 
   return( <>
-    <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="light">
+    <Navbar expand="lg" className="bg-body-tertiary tbnav"  variant='light'>
     <Container>
     <LinkContainer to={"/"}>
     <Logo className="d-inline-block align-top logo" width={90} height={90} />
@@ -42,7 +44,7 @@ export default function TBPLayout({children}) {
           <Nav.Link href="https://blog.texasbarpractice.com/">Blog</Nav.Link>
           <Nav.Link href="https://blog.texasbarpractice.com/">About Us</Nav.Link>
           <Nav.Link href="https://blog.texasbarpractice.com/">Contact </Nav.Link>
-          <NavDropdown 
+          <NavDropdown
           title="SBOT Resources"
           id="basic-nav-dropdown"
           onMouseEnter={handleOpen}
@@ -66,36 +68,51 @@ export default function TBPLayout({children}) {
         </Nav>
         <Nav>
         <Navbar.Text>
-            <a href="#login">Log In</a> or <a href="#login">Join Now</a>
+            <a href="#login" style={{textDecoration: "none", color: "#793b42"}}><strong>Log In</strong></a> or <a href="#login" style={{textDecoration: "none", color: "#d94e41"}}><strong>Join Now</strong></a>
           </Navbar.Text>
           </Nav>
       </Navbar.Collapse>
     </Container>
   </Navbar>
   {children}
-  <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary">
+  <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary tbfooter" style={{marginTop: "1%"}}>
     <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
+      <Row>
+      <Col md={'auto'}><LinkContainer to={"/"}>
+    <LogoWhite className="d-inline-block align-top logo" width={150} height={150} />
+    </LinkContainer><br />
+    <Navbar.Text className='small'>
+    © 2023 State Bar of Texas<br />800.204.2222 ext. 1411<br />
+Austin: 512-427-1411
+          </Navbar.Text></Col>
+          <Col md="2"></Col>
+        <Col>
+<h4>Resources</h4>
+<Nav className='flex-column'>
+<Nav.Link href="/bar-books">Texas Bar Books</Nav.Link>
+      <Nav.Link eventKey="link-1">Law Practice Management</Nav.Link>
+      <Nav.Link eventKey="link-2">Help Center</Nav.Link>
+      <Nav.Link eventKey="link-2">Texas Bar Books Online</Nav.Link>
+      <Nav.Link eventKey="link-2">Scholarships</Nav.Link>
+      <Nav.Link eventKey="link-2">Texas Bar Books Toolbar</Nav.Link>
+</Nav>
+
+      </Col>
+      <Col>
+      <h4>About Us</h4>
+<Nav className='flex-column'>
+<Nav.Link href="link-3">About Texas Bar Practice</Nav.Link>
+      <Nav.Link eventKey="link-1">Contact Information</Nav.Link>
+      <Nav.Link eventKey="link-2">Blog</Nav.Link>
+</Nav>
+      </Col>
+      <Col><h4>Work with us</h4>
+<Nav className='flex-column'>
+<Nav.Link href="/bar-books">Legal Vendors</Nav.Link>
+</Nav></Col>
+      </Row>
     </Container>
   </Navbar>
   </>
   )
-} 
+}
