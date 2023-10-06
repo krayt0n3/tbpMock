@@ -38,8 +38,8 @@ export default function TBPLayout({children}) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <LinkContainer to={"/tbpMock"}>
-          <Nav.Link href="/tbpMock">Bookshop</Nav.Link>
+          <LinkContainer to={"/bookshop"}>
+          <Nav.Link href="/bookshop">Bookshop</Nav.Link>
           </LinkContainer>
           <Nav.Link href="https://blog.texasbarpractice.com/">Blog</Nav.Link>
           <Nav.Link href="https://blog.texasbarpractice.com/">About Us</Nav.Link>
@@ -55,8 +55,8 @@ export default function TBPLayout({children}) {
             <NavDropdown.Item href="https://www.texasbarcle.com/CLE/Home.asp">
               Texas Bar CLE
             </NavDropdown.Item>
-            <LinkContainer to={"/lpm"}>
-            <NavDropdown.Item href="lpm">
+            <LinkContainer to={"/law-practice-management"}>
+            <NavDropdown.Item href="/law-practice-management">
               Law Practice Management
             </NavDropdown.Item>
             </LinkContainer>
