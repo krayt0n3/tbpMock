@@ -17,6 +17,25 @@ $dark-blue: #1a2844;
 $light-blue: #29516d;
 $black: #333333;
 
+.darkBlueText {
+  color: $dark-blue;
+}
+
+.bglb {
+  background-color: $light-blue;
+  color: white;
+}
+
+.bgdo {
+  background-color: $dark-orange;
+  color: white;
+}
+
+.bgdb {
+  background-color: $dark-blend;
+  color: white;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings;
   font-weight: 700;
@@ -53,4 +72,18 @@ font-style: normal;
 
 .small {
   font-size: small;
+}
+
+.center {
+  text-align: center;
+}
+
+.signify {
+  background: #1a2844;
+  color: white;
+  padding: 1% 1% 0 1%;
+}
+
+.bold {
+  font-weight: 700;
 }

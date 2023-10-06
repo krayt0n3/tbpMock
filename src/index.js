@@ -9,7 +9,7 @@ import App from './App';
 import ErrorPage from './pages/error';
 import LPM from './pages/lpm';
 import reportWebVitals from './reportWebVitals';
-import TBP from './pages/tbpMock';
+import Bookshop from './pages/bookstore';
 import Home from './pages/home';
 
 const router = createBrowserRouter([
@@ -17,21 +17,19 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
-    children: [
+  },
       {
-        path: '/lpm',
+        path: '/law-practice-management',
         element: <LPM />
       },
       {
-        path: '/tbpMock',
-        element: <TBP />
+        path: '/bookshop',
+        element: <Bookshop />
       },
       {
         path: '/home',
         element: <Home />
       }
-    ]
-  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
