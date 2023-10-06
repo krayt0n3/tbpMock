@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tbpMock/static/css/main.27f667b3.css",
-    "main.js": "/tbpMock/static/js/main.d506cf02.js",
+    "main.js": "/tbpMock/static/js/main.f9349bd5.js",
     "static/js/787.284b9348.chunk.js": "/tbpMock/static/js/787.284b9348.chunk.js",
     "static/media/Logo-Final-Monotone.svg": "/tbpMock/static/media/Logo-Final-Monotone.fbaf0b81afee6ae843be37efafa8a828.svg",
     "static/media/Logo-Final.svg": "/tbpMock/static/media/Logo-Final.8b2ea3763eb00d91fbaf70bdd9afb2c0.svg",
     "index.html": "/tbpMock/index.html",
     "main.27f667b3.css.map": "/tbpMock/static/css/main.27f667b3.css.map",
-    "main.d506cf02.js.map": "/tbpMock/static/js/main.d506cf02.js.map",
+    "main.f9349bd5.js.map": "/tbpMock/static/js/main.f9349bd5.js.map",
     "787.284b9348.chunk.js.map": "/tbpMock/static/js/787.284b9348.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27f667b3.css",
-    "static/js/main.d506cf02.js"
+    "static/js/main.f9349bd5.js"
   ]
 }
