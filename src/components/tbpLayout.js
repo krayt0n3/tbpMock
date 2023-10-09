@@ -27,7 +27,7 @@ export default function TBPLayout({children}) {
     )
   };
 
-  return( <>
+  return( <div className='page-container'>
     <Navbar expand="lg" className="bg-body-tertiary tbnav"  variant='light'>
     <Container>
     <LinkContainer to={"/"}>
@@ -79,8 +79,11 @@ export default function TBPLayout({children}) {
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  <div className='content-wrap'>
   {children}
-  <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary tbfooter" style={{marginTop: "1%"}}>
+  </div>
+  <footer className='footer'>
+  <Navbar expand="lg" className="bg-body-tertiary tbfooter" style={{marginTop: "1%"}}>
     <Container>
       <Row>
       <Col md={'auto'}><LinkContainer to={"/"}>
@@ -118,6 +121,7 @@ Austin: 512-427-1411
       </Row>
     </Container>
   </Navbar>
-  </>
+  </footer>
+  </div>
   )
 }
